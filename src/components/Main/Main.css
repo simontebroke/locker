@@ -331,6 +331,10 @@
   .altHeader .hc1 .lockerHeading {
     margin-left: 5.8vw !important;
   }
+  .gridContainer .lcsContainer .lcs {
+    padding: 150px 35%;
+    top: 17%;
+  }
 }
 @media (max-width: 1440px) {
   .gridContainer .lcsContainer {
