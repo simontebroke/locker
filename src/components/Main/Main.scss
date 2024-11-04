@@ -318,12 +318,24 @@
   }
 }
 
+@media (max-width: 4500px) {
+  .gridContainer .lcsContainer .lcs {
+    top: 10%;
+  }
+  .gridContainer .lcsContainer .lcs {
+    padding: 250px 35%;
+  }
+}
+
+@media (max-width: 2400px) {
+  .gridContainer .lcsContainer .lcs {
+    padding: 260px 35%;
+  }
+}
+
 @media (max-width: 1700px) {
   .gridContainer .lcsContainer {
     height: 2410px;
-  }
-  .gridContainer .lcsContainer .lcs {
-    top: 17%;
   }
 }
 
