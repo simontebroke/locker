@@ -1,41 +1,74 @@
+// src/Faq.js
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./FAQ.css";
+import { motion } from "framer-motion";
 
-const FAQ = ({ faqItems }: any) => {
+const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index: any) => {
-    setActiveIndex(index === activeIndex ? null : index);
+  const faqs = [
+    {
+      question: "What is your return policy?",
+      answer: "You can return any item within 30 days for a full refund.",
+    },
+    {
+      question: "How do I track my order?",
+      answer:
+        "You will receive a tracking number via email once your order has shipped.",
+    },
+    {
+      question: "Do you ship internationally?",
+      answer: "Yes, we ship to many countries worldwide.",
+    },
+  ];
+
+  const toggleAnswer = (index: any) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <div className="accordion custom-accordion">
-      {faqItems.map((item: any, index: any) => (
-        <div className="accordion-item" key={index}>
-          <h2 className="accordion-header">
-            <button
-              className={`accordion-button ${
-                activeIndex === index ? "" : "collapsed"
-              }`}
-              type="button"
-              onClick={() => handleToggle(index)}
+    <div>
+      {faqs.map((faq, index) => (
+        <div key={index}>
+          <h3
+            onClick={() => toggleAnswer(index)}
+            style={{
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            {faq.question}
+            <motion.svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ marginLeft: "10px" }}
+              animate={{ rotate: activeIndex === index ? 180 : 0 }}
+              transition={{ duration: 0.3 }}
             >
-              {item.question}
-              <span
-                className={`arrow-icon ${
-                  activeIndex === index ? "rotate" : ""
-                }`}
-              >
-                ▼
-              </span>
-            </button>
-          </h2>
+              <path
+                d="M18.75 7.625L12 14.375L5.25 7.625"
+                stroke="#86868A"
+                stroke-width="2.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </motion.svg>
+          </h3>
           {activeIndex === index && (
-            <div className="accordion-collapse show">
-              <div className="accordion-body">{item.answer}</div>
-            </div>
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.15 }}
+            >
+              <p>{faq.answer}</p>
+            </motion.div>
           )}
+          <hr />
         </div>
       ))}
     </div>

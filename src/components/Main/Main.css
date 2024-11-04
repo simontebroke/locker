@@ -302,10 +302,16 @@
   .gridContainer .lcsContainer {
     height: 2470px;
   }
+  .gridContainer .lcsContainer .lcs {
+    top: 13%;
+  }
 }
 @media (max-width: 1700px) {
   .gridContainer .lcsContainer {
     height: 2410px;
+  }
+  .gridContainer .lcsContainer .lcs {
+    top: 17%;
   }
 }
 @media (max-width: 1650px) {
