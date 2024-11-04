@@ -1,0 +1,50 @@
+/* Style the accordion to look more like Apple's FAQ */
+.custom-accordion {
+  .accordion-item {
+    border-top: 1px solid #e0e0e0;
+
+    &:last-child {
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .accordion-button {
+      background-color: white;
+      color: #333;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left;
+      padding: 15px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+      box-shadow: none;
+      outline: none;
+
+      &:hover {
+        background-color: #f9f9f9;
+      }
+
+      &.collapsed {
+        color: #555;
+      }
+    }
+
+    .accordion-body {
+      padding: 15px 20px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
+}

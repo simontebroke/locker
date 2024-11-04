@@ -16,7 +16,7 @@
     align-items: center;
     flex-direction: row;
     h2 {
-      margin: 0 4vw;
+      margin: 0 4.3vw;
     }
     &.hc1 {
       margin: 8px 0 !important;
@@ -27,7 +27,7 @@
         font-size: 25px;
         font-weight: 400;
         text-align: right;
-        margin-left: 5.4vw;
+        margin-left: 4.8vw;
       }
     }
 
@@ -65,14 +65,14 @@
 
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 329px;
+  grid-template-columns: 1fr 345px;
   grid-template-rows: auto auto;
   grid-template-areas:
     "lcf rcf"
     "lcs rcs";
   border-radius: 20px;
   gap: 83px 60px;
-  margin: 54px 4vw 98px 5.5vw;
+  margin: 54px 4.3vw 98px 5.8vw;
   margin-bottom: 312px;
   .lcf {
     grid-area: lcf;
@@ -110,13 +110,13 @@
     .lcs {
       grid-area: lcs;
       background-color: #f6f5f8;
-      padding: 20% 39%;
+      padding: 15% 35%;
       border-radius: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       position: sticky;
-      top: 15vh;
+      top: 16%;
       img {
         max-width: 60vh;
         height: auto;
@@ -311,30 +311,33 @@
 
 @media (max-width: 2070px) {
   .gridContainer .lcsContainer {
-    height: 2500px;
+    height: 2470px;
   }
 }
 
 @media (max-width: 1700px) {
   .gridContainer .lcsContainer {
-    height: 2440px;
+    height: 2410px;
   }
 }
 
 @media (max-width: 1650px) {
   .gridContainer .lcsContainer {
-    height: 2420px;
+    height: 2390px;
+  }
+  .altHeader .hc1 .lockerHeading {
+    margin-left: 5.8vw !important;
   }
 }
 
 @media (max-width: 1440px) {
   .gridContainer .lcsContainer {
-    height: 2350px;
+    height: 2320px;
   }
 }
 
 @media (max-width: 1300px) {
   .gridContainer .lcsContainer {
-    height: 2280px;
+    height: 2250px;
   }
 }
