@@ -45,7 +45,7 @@ const FAQ = () => {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              style={{ marginLeft: "10px" }}
+              style={{ marginLeft: "10px", transformOrigin: "center center" }}
               animate={{ rotate: activeIndex === index ? 180 : 0 }}
               transition={{ duration: 0.3 }}
             >
