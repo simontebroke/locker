@@ -1,0 +1,13 @@
+.header {
+  background: radial-gradient(100% 6362.58% at 100% 0%, #ea994f 17.24%, #e46f90 32.29%, #cc6deb 50.99%, #65b9f9 74.38%);
+  text-align: center;
+  color: #fff;
+  padding: 18px 0;
+}
+.header p {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 16.71px;
+  letter-spacing: 0.04em;
+}/*# sourceMappingURL=Header.css.map */
