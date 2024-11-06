@@ -1,0 +1,42 @@
+.FAQ-firstContainer {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left !important;
+  margin-bottom: 200px;
+  .leftText {
+    text-align: left;
+    width: 982px;
+    font-weight: 590;
+    line-height: 38.19px;
+  }
+  h1 {
+    font-weight: 590;
+    line-height: 38.19px;
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 590;
+  }
+  p {
+    margin-top: 31px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+  hr {
+    border: none; /* Remove default border */
+    height: 1px; /* Set the height of the line */
+    background-color: #d2d2d7; /* Set the background color */
+    margin: 18px 0; /* Optional: Adjust margins as needed */
+  }
+  .FAQ-Container {
+    width: 982px;
+  }
+}

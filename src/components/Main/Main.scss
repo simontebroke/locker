@@ -362,8 +362,35 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1300px) {
   .gridContainer .lcsContainer {
     height: 2250px;
+  }
+}
+
+@media (min-width: 1030px) {
+  .gridContainer .lcsContainer {
+    height: 2300px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "lcf"
+      "rcf"
+      "lcs"
+      "rcs";
+  }
+  .gridContainer .lcsContainer .lcs {
+    padding: 13% 35%;
+    position: relative;
+    top: 0;
+  }
+
+  .gridContainer .lcsContainer {
+    height: auto;
   }
 }
