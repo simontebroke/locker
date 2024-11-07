@@ -60,12 +60,12 @@
 
 .altLockerImageContainer {
   display: none;
+  max-width: 60vh;
   overflow-x: hidden;
 }
 .altLockerImageContainer img {
   max-width: 60vh;
   height: auto;
-  overflow-x: hidden;
 }
 
 .altHeader.visible {
