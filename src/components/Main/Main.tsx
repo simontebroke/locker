@@ -409,7 +409,7 @@ function Main() {
               <br />
               <br />
               <h2 className="marginheading">
-                <span>Styles.</span> Wähle deinen Lieblingsstyle.
+                <span>Styles.</span> Wähle deinen Lieblingsstyle..
               </h2>
               <div className="altLockerImageContainer">
                 <img
