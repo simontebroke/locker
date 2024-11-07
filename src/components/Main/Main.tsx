@@ -223,6 +223,9 @@ function Main() {
             <h2>
               <span>Design.</span> Wähle die passende Umwandlung aus.
             </h2>
+            <div className="altLockerImageContainer">
+              <img src={Locker} className="altLockerImage" alt="Locker Bild" />
+            </div>
             <button
               className={`designPro bop1 ${
                 activeDesignButton === "designPro" ? "active" : ""
@@ -404,9 +407,17 @@ function Main() {
             </button>
             <div ref={section2Ref}>
               <br />
+              <br />
               <h2 className="marginheading">
                 <span>Styles.</span> Wähle deinen Lieblingsstyle.
               </h2>
+              <div className="altLockerImageContainer">
+                <img
+                  src={Locker}
+                  className="altLockerImage"
+                  alt="Locker Bild"
+                />
+              </div>
               <div className="styleButtonGrid">
                 <button
                   className={`Funky styleButton ${

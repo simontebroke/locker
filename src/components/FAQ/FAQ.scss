@@ -31,12 +31,19 @@
     margin-bottom: 28px;
   }
   hr {
-    border: none; /* Remove default border */
-    height: 1px; /* Set the height of the line */
-    background-color: #d2d2d7; /* Set the background color */
-    margin: 18px 0; /* Optional: Adjust margins as needed */
+    border: none;
+    height: 1px;
+    background-color: #d2d2d7;
+    margin: 18px 0;
   }
-  .FAQ-Container {
-    width: 982px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .FAQ-firstContainer .FAQ .leftText {
+    max-width: 100vw;
+  }
+  .FAQ-firstContainer .FAQ .leftText,
+  .FAQ-firstContainer .FAQ .FAQ-Container {
+    padding: 0 24px;
   }
 }
