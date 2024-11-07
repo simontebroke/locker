@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .altHeader {
   position: fixed;
   top: 0px;
