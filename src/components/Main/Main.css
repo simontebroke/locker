@@ -312,7 +312,7 @@
     top: 13%;
   }
 }
-@media only screen and (min-width: 2200px) {
+@media (min-width: 2200px) {
   .gridContainer .lcsContainer .lcs {
     padding: 210px 35%;
   }
@@ -402,7 +402,7 @@
     margin: 0px 31px;
   }
 }
-@media only screen and (max-width: 616px) {
+@media (max-width: 616px) {
   img {
     max-width: 350px !important;
   }
@@ -428,12 +428,12 @@
     margin: 6px 4vw;
   }
 }
-@media only screen and (max-width: 487px) {
+@media (max-width: 487px) {
   img {
     max-width: 281px !important;
   }
 }
-@media only screen and (max-width: 425px) {
+@media (max-width: 425px) {
   .gridContainer .rcs .scrollContainer .styleButtonGrid {
     justify-items: center;
     margin: 0px;
