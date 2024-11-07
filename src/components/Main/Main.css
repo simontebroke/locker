@@ -60,7 +60,7 @@
 
 .altLockerImageContainer {
   display: none;
-  max-width: 60vh;
+  max-width: 90vw;
   overflow-x: hidden;
 }
 .altLockerImageContainer img {
